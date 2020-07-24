@@ -1,6 +1,6 @@
 # Ensenada
 
-Ensenada is a complete joke of an attempt to use a financial indicator library ([tulip](https://tulipindicators.org/)), to buy and sell against historical bitcoin data I scraped with a curl command that no longer works lmao. I also began to integrate with [ccxt](https://github.com/ccxt/ccxt), a unified crypto exchange API. 
+Ensenada is a fledgling attempt to use a financial indicator library ([tulip](https://tulipindicators.org/)), to buy and sell against historical bitcoin data I scraped with a curl command that no longer works lmao. I also began to integrate with [ccxt](https://github.com/ccxt/ccxt), a unified crypto exchange API. 
 
 This is basically crayons on the wall, but the thought of a trading bot is so enticing and I'm game to keep exploring. I probably need to read more before just writing a bunch of python (which I am not proficient at).
 
