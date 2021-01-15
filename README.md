@@ -14,3 +14,9 @@ You can run it by running `test_single_file.py`, and you should see a graph outp
 
 ![graph output](
 https://user-images.githubusercontent.com/6634502/88358611-3850c680-cd35-11ea-8ac5-76d585016643.png)
+
+## Alpaca implementation
+
+Scripts in the `alpaca` folder use the tulip PSAR indicator to make trades against an [Alpaca](https://alpaca.markets/) paper trading account. I wrote them [following along with this guide](https://alpaca.markets/learn/algorithmic-trading-bot-7-steps/), although I've got nothing on google cloud right now, I just run locally. It basically runs once a minute, checks the price history, and will either buy or sell depending on the momentum and whether or not you are holding the security. It is not performing well lol. But it is performing, and that's fun! When it makes decisions, it can email you if you setup an email account and include credentials. This is optional and you can comment this code out if you don't care. I used gmail for the email, keep in mind that you'll have to [enable less secure app access](https://support.google.com/accounts/answer/6010255?hl=en) if you aren't doing something more fancy like app passwords.
+
+To use, enter your credentials (sender email, sender email password, receiving email, alpaca key, and alpaca secret key) in the `constants.py` file and run `program.py`, which will execute `trade.py` once a minute.
